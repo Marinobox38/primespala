@@ -148,7 +148,6 @@ class PrimeAdminView(discord.ui.View):
                     description=(
                         f"**Cible :** {prime['pseudo']}\\n"
                         f"**Récompense :** **{prime['montant']}$**\\n"
-                        f"**Infos paiement :** {prime['preuve']}\\n\\n"
                         f"Tu as abattu la cible ? Clique ci-dessous pour soumettre ta preuve au staff."
                     ),
                     color=discord.Color.gold()
@@ -233,11 +232,11 @@ async def afficher_cmd(interaction: discord.Interaction):
     embed = discord.Embed(
         title="🧭 Les Primes de Paladium",
         description=(
-            "Place une prime sur un joueur (PVP fair-play uniquement).\\n\\n"
-            "• Spécifie le pseudo, le montant, et ajoute une preuve de paiement.\\n"
-            "• Le staff valide/retire la prime côté admin.\\n"
-            "• Une fois acceptée, elle apparaît publiquement avec un bouton pour déclarer un kill.\\n\\n"
-            "Une **taxe de 1000$** est appliquée sur chaque dépôt.\\n"
+            "Place une prime sur un joueur (PVP fair-play uniquement)."
+            "• Spécifie le pseudo, le montant, et ajoute une preuve de paiement."
+            "• Le staff valide/retire la prime côté admin."
+            "• Une fois acceptée, elle apparaît publiquement avec un bouton pour déclarer un kill."
+            "Une **taxe de 1000$** est appliquée sur chaque dépôt."
             "Preuve de paiement à envoyer (screen/vidéo) vers l'adresse communiquée par le staff."
         ),
         color=discord.Color.blurple()
